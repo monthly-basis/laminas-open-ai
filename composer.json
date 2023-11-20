@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "laminas/laminas-test": "^4.0",
-        "monthly-basis/laminas-test": "^2.0"
+        "monthly-basis/laminas-test": "^2.0",
+        "orhanerday/open-ai": "^4.9"
     }
 }
