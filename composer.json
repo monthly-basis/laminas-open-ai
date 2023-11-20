@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MonthlyBasis\\LaminasOpenAi\\": "src/",
+            "MonthlyBasis\\LaminasOpenAiTest\\": "test/"
+        }
+    },
+    "name": "monthly-basis/laminas-open-ai",
+    "license": "MIT",
+    "require": {
+        "laminas/laminas-test": "^4.0",
+        "monthly-basis/laminas-test": "^2.0"
+    }
+}
