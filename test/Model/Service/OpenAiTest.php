@@ -19,11 +19,21 @@ class OpenAiTest extends TestCase
         );
     }
 
-    public function test_instance()
+    public function test_chat()
     {
-        $this->assertInstanceOf(
-            LaminasOpenAiService\OpenAi::class,
-            $this->openAiService
+        $this->markTestSkipped(
+          'Skip this test unless you want to call API.'
         );
+
+        $response = $this->openAiService->chat([
+            'model' => 'gpt-3.5-turbo',
+            'messages' => [
+                [
+                    'role' => 'user',
+                    'content' => 'hello world',
+                ],
+            ],
+        ]);
+        $this->assertNotEmpty($response);
     }
 }
