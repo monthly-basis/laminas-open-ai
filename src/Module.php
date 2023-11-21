@@ -20,6 +20,11 @@ class Module
                         $sm->get('Config')['monthly-basis']['laminas-open-ai'] ?? []
                     );
                 },
+                LaminasOpenAiService\OpenAi::class => function ($sm) {
+                    return new LaminasOpenAiService\OpenAi(
+                        $sm->get(LaminasOpenAiEntity\Config::class),
+                    );
+                },
             ],
         ];
     }
